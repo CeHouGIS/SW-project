@@ -7,6 +7,7 @@
   <meta name="theme-color" content="#f6f7f4">
   <title>Research Pipeline · 研究项目总览</title>
   <link rel="stylesheet" href="styles.css">
+  <script src="timeline.js" defer></script>
 </head>
 <body>
   <a class="skip-link" href="#main">跳到正文</a>
@@ -46,84 +47,27 @@
         <p>2026 年 11 月 — 2027 年 9 月</p>
       </div>
 
-      <div class="timeline-desktop">
-        <div class="table-scroll">
-          <table class="pipeline-table">
-            <caption class="sr-only">五个研究项目从 2026 年 11 月到 2027 年 9 月的计划阶段和目标节点</caption>
-            <colgroup><col class="project-col"><col span="11"></colgroup>
-            <thead><tr>
-              <th scope="col">项目 / 月份</th>
-              <th scope="col">26/11</th><th scope="col">26/12</th><th scope="col">27/01</th><th scope="col">27/02</th><th scope="col">27/03</th><th scope="col">27/04</th><th scope="col">27/05</th><th scope="col">27/06</th><th scope="col">27/07</th><th scope="col">27/08</th><th scope="col">27/09</th>
-            </tr></thead>
-            <tbody>
-              <tr>
-                <th scope="row"><span class="project-id">P03</span><span class="project-name">气候与住房质量</span><small>观点 / 综述文章</small></th>
-                <td><span class="block publish" aria-label="11 月底完成并投稿或网上发布">发布/投稿</span></td>
-                <td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td>
-              </tr>
-              <tr>
-                <th scope="row"><span class="project-id">P01</span><span class="project-name">Kenneth · CHQ 更新</span><small>气候、住房质量与房价</small></th>
-                <td></td>
-                <td><span class="block data" aria-label="CHQ 数据计算"></span></td>
-                <td><span class="block data" aria-label="1 月底完成 CHQ 数据计算">CHQ</span></td>
-                <td><span class="block draft" aria-label="更新稿件"></span></td>
-                <td><span class="block draft" aria-label="3 月底更新完稿件">改稿</span></td>
-                <td><span class="block review" aria-label="内部审阅和修改"></span></td>
-                <td><span class="block review" aria-label="投稿准备"></span></td>
-                <td><span class="block publish" aria-label="6 月投稿">投稿</span></td>
-                <td></td><td></td><td></td>
-              </tr>
-              <tr>
-                <th scope="row"><span class="project-id">P02</span><span class="project-name">住房质量与儿童结果</span><small>全英国测量 · UKHS</small></th>
-                <td></td><td></td>
-                <td><span class="block data" aria-label="扩展 CHQ 指标"></span></td>
-                <td><span class="block data" aria-label="2 月底完成全英国住房质量测量">测量</span></td>
-                <td><span class="block data" aria-label="整理 UKHS 数据"></span></td>
-                <td><span class="block data" aria-label="4 月底形成可分析的 UKHS 数据">UKHS</span></td>
-                <td><span class="block draft" aria-label="分析和写稿"></span></td>
-                <td><span class="block draft" aria-label="6 月底完成初稿">初稿</span></td>
-                <td><span class="block review" aria-label="修改稿件"></span></td>
-                <td><span class="block review" aria-label="投稿准备"></span></td>
-                <td><span class="block publish" aria-label="9 月投稿">投稿</span></td>
-              </tr>
-              <tr class="unscheduled-row">
-                <th scope="row"><span class="project-id">P04</span><span class="project-name">高层景观与房价</span><small>研究范围待细化</small></th>
-                <td colspan="11"><span>待排期 · 尚未确定里程碑</span></td>
-              </tr>
-              <tr class="unscheduled-row">
-                <th scope="row"><span class="project-id">P05</span><span class="project-name">数据霸权</span><small>研究范围待确定</small></th>
-                <td colspan="11"><span>待排期 · 尚未确定里程碑</span></td>
-              </tr>
-            </tbody>
-          </table>
-        </div>
+      <div class="timeline-scroller" tabindex="0" aria-label="可横向滚动的项目月份计划图">
+        <div class="timeline-board" id="timeline-board"></div>
       </div>
-
-      <div class="timeline-mobile" aria-label="按项目排列的关键时间节点">
-        <div class="mobile-lane"><h3><span>P03</span> 气候与住房质量</h3><p><b class="dot publish"></b><strong>2026.11</strong> 完稿；目标投稿或网上发布</p></div>
-        <div class="mobile-lane"><h3><span>P01</span> Kenneth · CHQ 更新</h3><p><b class="dot data"></b><strong>2027.01</strong> 完成数据计算</p><p><b class="dot draft"></b><strong>2027.03</strong> 更新完稿件</p><p><b class="dot publish"></b><strong>2027.06</strong> 投稿</p></div>
-        <div class="mobile-lane"><h3><span>P02</span> 住房质量与儿童结果</h3><p><b class="dot data"></b><strong>2027.02</strong> 完成全英国住房质量测量</p><p><b class="dot data"></b><strong>2027.04</strong> 形成可分析的 UKHS 数据</p><p><b class="dot draft"></b><strong>2027.06</strong> 完成初稿</p><p><b class="dot publish"></b><strong>2027.09</strong> 投稿</p></div>
-        <div class="mobile-lane"><h3><span>P04</span> 高层景观与房价</h3><p class="muted">待排期 · 尚未确定里程碑</p></div>
-        <div class="mobile-lane"><h3><span>P05</span> 数据霸权</h3><p class="muted">待排期 · 尚未确定里程碑</p></div>
-      </div>
-
+      <p class="timeline-scroll-hint">横向查看月份；选择项目或彩色月份查看研究目的、数据、模型与合作关系。</p>
       <div class="legend" aria-label="时间线图例">
         <span><b class="key data"></b>数据 / 测量</span>
         <span><b class="key draft"></b>分析 / 写稿</span>
-        <span><b class="key review"></b>修改 / 准备</span>
+        <span><b class="key review"></b>修改 / 投稿准备</span>
         <span><b class="key publish"></b>目标发布 / 投稿</span>
       </div>
-      <p class="caption">彩色区间按截止日期倒排，是工作安排建议；带文字的月份对应已提出的目标节点。P03 完成后推进 P01、P02，P01 的 CHQ 结果是 P02 测量的基础。</p>
-    </section>
-
-    <section class="reference-section wrap" aria-labelledby="reference-title">
-      <div class="reference-heading">
-        <div><p class="eyebrow">REFERENCE</p><h2 id="reference-title">原始时间线参考图</h2></div>
-      </div>
-      <figure class="reference-figure">
-        <img src="assets/timeline-reference.jpg" alt="研究项目时间线参考图，展示 2026 年 11 月至 2027 年 9 月的研究计划。" loading="lazy" width="800" height="450">
-        <figcaption>用户提供的项目规划参考图</figcaption>
-      </figure>
+      <aside class="project-detail" id="project-detail" aria-live="polite" aria-atomic="true">
+        <div class="detail-heading"><span class="detail-id">P03</span><div><h3>气候与住房质量</h3><p class="detail-timing">2026 年 11 月 · 完稿并目标投稿或网上发布</p></div></div>
+        <dl class="detail-grid">
+          <div><dt>研究目的</dt><dd>完成气候与住房质量的观点 / 综述文章，为后续实证研究建立框架。</dd></div>
+          <div><dt>数据</dt><dd>相关研究文献；具体资料和证据范围待定。</dd></div>
+          <div><dt>模型</dt><dd>文献综合与观点框架；具体方法待确定。</dd></div>
+          <div><dt>合作关系</dt><dd>尚未记录可连接数据或合作机会的人脉。</dd></div>
+        </dl>
+      </aside>
+      <noscript><p class="caption">请启用 JavaScript 查看交互式研究时间线。</p></noscript>
+      <p class="caption">时间节点来自已提出的目标；未明确的阶段以倒排方式展示。P03 先完成，P01 更新后的 CHQ 指标为 P02 全英国测量提供基础。</p>
     </section>
 
     <section class="section wrap" id="projects" aria-labelledby="projects-title">
