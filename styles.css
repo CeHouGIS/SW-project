@@ -76,6 +76,14 @@ h1 { margin: 0; font-size: clamp(32px, 4vw, 48px); line-height: 1.18; letter-spa
 .caption { margin: 13px 0 0; color: var(--muted); font-size: 11px; line-height: 1.6; }
 .timeline-mobile { display: none; }
 
+.reference-section { padding-block: 0 46px; }
+.reference-heading { padding-top: 20px; border-top: 1px solid var(--line); }
+.reference-heading .eyebrow { margin-bottom: 6px; }
+.reference-heading h2 { margin: 0; font-size: 18px; line-height: 1.35; }
+.reference-figure { max-width: 800px; margin: 16px 0 0; }
+.reference-figure img { display: block; width: 100%; height: auto; border: 1px solid var(--line); }
+.reference-figure figcaption { margin-top: 7px; color: var(--muted); font-size: 11px; }
+
 .project-list { border-top: 1px solid var(--line); }
 .project-row { display: grid; grid-template-columns: 54px minmax(0, 1fr) 190px; gap: 16px; padding: 21px 0; border-bottom: 1px solid var(--line); }
 .row-no { padding-top: 3px; color: #5f7a69; font-size: 12px; font-weight: 700; }
